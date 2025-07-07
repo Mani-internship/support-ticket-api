@@ -1,0 +1,14 @@
+# Support Ticket API
+
+A Spring Boot REST API to submit and retrieve support tickets.
+
+## Features
+
+- Submit tickets (POST /api/tickets)
+- Retrieve all tickets (GET /api/tickets)
+- Field validation with error messages
+
+## How to Run
+
+```bash
+./mvnw spring-boot:run

@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "a420ecf6-7101-45cd-8630-2770901ba00f",
+		"name": "Support Ticket API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46534457",
+		"_collection_link": "https://mani-5442594.postman.co/workspace/Mani's-Workspace~2e53dc28-14ac-425f-8079-29d8a8611d92/collection/46534457-a420ecf6-7101-45cd-8630-2770901ba00f?action=share&source=collection_link&creator=46534457"
+	},
+	"item": [
+		{
+			"name": "Create Ticket (POST)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Mani\",\n  \"email\": \"Mani@example.com\",\n  \"phone\": \"1234567890\",\n  \"serviceType\": \"Internet\",\n  \"issueDescription\": \"Internet not working\",\n  \"priority\": \"High\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tickets (GET)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
